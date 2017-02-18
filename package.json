@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
-    "clean": "clean",
+    "bundleCSS": "bundle",
     "watch": "webpack -w",
-    "jszip": "webpack -p"
+    "bundleJS": "webpack -p"
   },
   "keywords": [],
   "author": "",

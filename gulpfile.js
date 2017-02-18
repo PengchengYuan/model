@@ -19,13 +19,13 @@ gulp.task('default',function(){
 	});
 });
 
-gulp.task('clean', ['csszip'],function(){                         //删除目录
+gulp.task('clean',function(){                         //删除目录
 	gulp.src('css/scss').pipe(clean()); 	
 });
 
-gulp.task('csszip', function(){                         
+gulp.task('bundle', function(){                         
 	gulp.src('css/scss/*.css'). 
-	pipe(concat('all.css')).
+	pipe(concat('bundle.css')).
 	pipe(cleancss()).
 	pipe(gulp.dest('css'));	
 });
