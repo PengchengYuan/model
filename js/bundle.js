@@ -42,23 +42,9 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var moudel1 = __webpack_require__(1);
-	moudel1.sayName();
-
-/***/ },
-/* 1 */
 /***/ function(module, exports) {
 
-	var name="原鹏程";
-	function sayName(){
-		console.log('说出我的名字',name);
-	}
-	module.exports = {
-		sayName:sayName
-	};
-
+	console.log(1);
 
 /***/ }
 /******/ ]);

@@ -8,7 +8,7 @@ var clean = require('gulp-clean');              //删除文件模块
 
 //加载安装插件    npm install gulp-clean  --save-dev
 
-gulp.task('default',function(){
+gulp.task('transform',function(){
 	gulp.watch('less/*.less', function(){                    //按ctrl + c 结束监听任务
 		gulp.src('less/*.less').
 		pipe(gulpless()).                               //过滤操作less转css
@@ -23,9 +23,11 @@ gulp.task('clean',function(){                         //删除目录
 	gulp.src('css/scss').pipe(clean()); 	
 });
 
-gulp.task('bundle', function(){                         
-	gulp.src('css/scss/*.css'). 
-	pipe(concat('bundle.css')).
-	pipe(cleancss()).
-	pipe(gulp.dest('css'));	
+gulp.task('default',['transform'],function(){
+	gulp.watch('css/scss/*.css', function(){                         
+		gulp.src('css/scss/*.css'). 
+		pipe(concat('bundle.css')).
+		pipe(cleancss()).
+		pipe(gulp.dest('css'));
+	});	
 });
