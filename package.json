@@ -6,14 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
-    "clean": "clean",
+    "server": "gulp server",
+    "clean": "gulp clean",
+    "bundlecss": "gulp bundle",
     "watch": "webpack -w",
-    "bundle": "webpack -p"
+    "bundlejs": "webpack -p"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean": "^0.3.2",
@@ -21,7 +24,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-less": "^3.3.0",
     "jquery": "^3.1.1",
-    "webpack": "^1.14.0",
-    "webpack-dev-server": "^2.4.1"
+    "webpack": "^1.14.0"
   }
 }
