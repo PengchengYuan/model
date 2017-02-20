@@ -1,23 +1,10 @@
-header {
-  width: 98%;
-  background: green;
-  opacity: .5;
-}
-nav {
-  background-color: #0ff;
-  border-radius: 10px 5px 15px 10px;
-  border: 1px solid #000;
-}
-nav ul li {
-  list-style: none;
+.left {
   float: left;
 }
-nav ul li a {
-  text-decoration: none;
-  display: block;
-  float: left;
+.right {
+  float: right;
 }
-nav ul li:after {
+.clear:after {
   content: "";
   overflow: hidden;
   height: 0;
@@ -25,14 +12,9 @@ nav ul li:after {
   visibility: hidden;
   clear: both;
 }
-nav ul:after {
-  content: "";
-  overflow: hidden;
-  height: 0;
-  display: block;
-  visibility: hidden;
-  clear: both;
-}
-nav a {
-  color: #f00;
+/*******************************分隔线******************************/
+#box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
 }

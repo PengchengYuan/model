@@ -1,42 +1,37 @@
-.aw(){width:100%;}
-.ah(){height:100%;}
+.w(@width){width:@width}
+.h(@height){height:@height}
+.w100(){width:100%;}
+.h100(){height:100%;}
 .block(){display: block;}
-.inblock(){display: block;vertical-align: middle;}
-.wcenter(){text-align: center;}
-.mcenter(){margin:0 auto;}
-.fcenter(){position:fixed;margin:auto;top:0;left:0;bottom:0;right:0}
+.inlineblock(){display:inline-block;vertical-align: middle;}
+.textcenter(){text-align: center;}
+.margincenter(){margin:0 auto;}
+.relative(){position:relative;}
+.abs(){position:absolute;}
+.fixed(){position:fixed;}
+.fixedcenter(){position:fixed;margin:auto;top:0;left:0;bottom:0;right:0}
+.positioncenter(){position:absolute;margin:auto;top:0;left:0;bottom:0;right:0}
 .noline(){text-decoration: none;.block}
-.left(){float:left;}
-.right(){float:right;}
-.nopod(){list-style:none}
-.bgc(@color){background-color:@color}
-.bg(@color,@url,@x,@y){background:@color url(@url) no-repeat @x @y}
-.border(){border:1px solid #000}
-.borderfn(@color,@style,@w){border:@w @style @color}
+.bg(@color){background-color:@color}
+.border(@color){border:1px solid @color}
 .border-box(){box-sizing:border-box;}
 .border-radius(...){border-radius:@arguments}
-.clear(){content:"";overflow:hidden;height:0;display:block;visibility: hidden;clear:both;}
+.shadow(...){box-shadow:@arguments}
+.left{float:left;}
+.right{float:right;}
+.clear{&:after{content:"";overflow:hidden;height:0;display:block;visibility: hidden;clear:both;}}
 .nav(){
 	ul{ 
 		li{
-			.nopod;
 			.left;
-			a{
-				.noline;
-				.left;
-
-			}
-			&:after{
-				.clear;
-			}
-		}
-		&:after{
+			a{.left;.block;}
 			.clear;
 		}
+		.clear;
 	}
 }
 		
 /*******************************分隔线******************************/
-
+#box{.w(200px);.h(200px);.bg(blue)}
 
 
