@@ -1,8 +1,10 @@
 .w(@width){width:@width}
 .h(@height){height:@height}
+.lh(@height){line-height:@height}
 .w100(){width:100%;}
 .h100(){height:100%;}
 .block(){display: block;}
+.color(@color){color:@color}
 .inlineblock(){display:inline-block;vertical-align: middle;}
 .textcenter(){text-align: center;}
 .margincenter(){margin:0 auto;}
@@ -21,17 +23,14 @@
 .right{float:right;}
 .clear{&:after{content:"";overflow:hidden;height:0;display:block;visibility: hidden;clear:both;}}
 .nav(){
-	ul{ 
-		li{
-			.left;
-			a{.left;.block;}
-			.clear;
-		}
+	li{
+		.left;.w(30px);
+		a{.left;.block;.h(30px);.bg(#00f);.w(30px);.border(#0f0);.textcenter;.lh(30px);.color(#fff);}
 		.clear;
 	}
+	.clear;
 }
 		
 /*******************************分隔线******************************/
-#box{.w(200px);.h(200px);.bg(blue)}
 
 
