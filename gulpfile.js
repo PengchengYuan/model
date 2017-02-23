@@ -33,18 +33,13 @@ gulp.task('server', function() {
     var files = [
     './**/*.html',
     './css/scss/*.css',
-    './js/*.js'
+    './js/**/*.js'
     ];
     browserSync.init(files,{
-        server: {
-            baseDir: "./"
-        }
+        //server: {                           //自带服务器
+        //    baseDir: "./"
+        //}
+        proxy: "http://10.9.170.136:666/"     //用第三方服务器，比如 Nginx + http-server
     });
 });
-// Domain server
-//gulp.task('browser-sync', function() {
-//    browserSync.init({
-//        proxy: "yourlocal.dev"
-//    });
-//});
 gulp.task('default',['transform','server']); //定义默认任务

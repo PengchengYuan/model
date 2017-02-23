@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
-    "server": "gulp server",
     "clean": "gulp clean",
     "bundlecss": "gulp bundle",
     "watch": "webpack -w",
@@ -16,14 +15,22 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
     "browser-sync": "^2.18.8",
+    "classnames": "^2.2.5",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-less": "^3.3.0",
-    "jquery": "^3.1.1",
-    "webpack": "^1.14.0"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-router": "^2.0.0",
+    "webpack": "^2.2.1",
+    "whatwg-fetch": "^2.0.2"
   }
 }
