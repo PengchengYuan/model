@@ -10,12 +10,12 @@ module.exports = {
 	  //入口js文件，在经过webpack处理之后，你希望它输出到哪个目录下
 	  path: './js/', //发布目录
 	  filename: '[name].js'
-	}/*,
+	},
 	plugins:[
 	  new webpack.ProvidePlugin({
 		    $:"jquery",
 		    jQuery:"jquery",
 		    "window.jQuery":"jquery"
 	  })
-	]*/
+	]
 };
