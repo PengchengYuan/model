@@ -6,11 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
-    "server": "gulp server",
     "clean": "gulp clean",
-    "bundlecss": "gulp bundle",
     "watch": "webpack -w",
-    "bundlejs": "webpack -p"
+    "bundle": "webpack -p"
   },
   "keywords": [],
   "author": "",
@@ -22,7 +20,6 @@
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.3.2",
     "gulp-concat": "^2.6.1",
-    "gulp-less": "^3.3.0",
-    "jquery": "^3.1.1",
+    "jquery": "^3.1.1"
   }
 }

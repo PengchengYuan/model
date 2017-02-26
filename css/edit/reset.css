@@ -19,7 +19,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -30,6 +29,7 @@ footer, header, hgroup, menu, nav, section, img, input {
 }
 body {
 	line-height: 1;
+	font-size:14px;
 }
 ol, ul, li{
 	list-style: none;
@@ -51,4 +51,18 @@ input{
 }
 a{
 	text-decoration: none;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear:after {
+  content: "";
+  overflow: hidden;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
 }
